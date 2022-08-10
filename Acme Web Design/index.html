@@ -1,0 +1,78 @@
+<!--Made with: https://www.youtube.com/watch?v=Wm6CUkswsNw&ab_channel=TraversyMedia-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!--description-->
+        <meta name="description" content="Affordable and professional web design">
+        <!--keywords; for SEO-->
+        <meta name="keywords" content="web design, affordable web design, professional web design" >
+        <!--author-->
+        <meta name="author" content="Ashton Leung">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Acme Web Design | Welcome</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <!--the container class is very common and it is used to consolidate everything and push it to the center-->
+        <header>
+            <div class="container">
+                <div id="branding">
+                    <h1><span class="highlight">Acme</span> <!--inline level element, not going to make it go to next line--> Web Design</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="current"><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="showcase">
+            <div class="container">
+                <h1>Affordable Professional Websites</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam bibendum, lacus in aliquet pretium, turpis risus condimentum tellus, eget consectetur ante neque ac neque.</p>
+            </div>
+        </section>
+
+        <section id="newsletter">
+            <div class="container">
+                <h1>Subscribe to our Newsletter</h1>
+                <form> <!--normally we would have an action attribute that links to whatever server-side file you're using-->
+                    <input type="email" placeholder="Enter Email">
+                    <button type="submit" class="button_1">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="boxes">
+            <div class="container">
+                <!--bc the boxes are all the same, we wrap all of them with the box class-->
+                <div class="box">
+                    <img src="./img/logo_html.png" alt="HTML">
+                    <h3>HTML5 Markup</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam bibendum, lacus in aliquet pretium</p>
+                </div>
+                <div class="box">
+                    <img src="./img/logo_css.png" alt="CSS">
+                    <h3>CSS3 Styling</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam bibendum, lacus in aliquet pretium</p>
+                </div>
+                <div class="box">
+                    <img src="./img/logo_brush.png" alt="Graphic Design">
+                    <h3>Graphic Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam bibendum, lacus in aliquet pretium</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>Acme Web Design, Copyright &copy; 2017</p>
+            </div>
+        </footer>
+    </body>
+</html>
