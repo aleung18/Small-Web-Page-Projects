@@ -1,0 +1,240 @@
+/* Utilities - classes we will use all around the website */
+.container {
+    max-width: 1100px;
+    margin: 0 auto; /* keeps it in the middle of container */
+    overflow: auto; /* removes the space at the top caused by the margin from the h1 */
+    padding: 0 40px;
+}
+
+.card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* horizontal offset,  vertical offset, blur, color (0.2 is transparency, all the 0s are colors) */
+    padding: 20px;
+    margin: 10px;
+}
+
+/* base button class */
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px #fff solid;
+}
+
+.btn:hover {
+    transform: scale(0.98); /* shrinks the size of the bottom when we hover over it. default value of scale is 1 */
+}
+
+/* Backgrounds and colored buttons */
+.bg-primary, .btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.bg-secondary, .btn-secondary {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.bg-dark, .btn-dark {
+    background-color: var(--dark-color);
+    color: #fff;
+}
+
+.bg-light, .btn-light {
+    background-color: var(--light-color);
+    color: #333;
+}
+
+.bg-primary a, .btn-primary a,
+.bg-secondary a, .btn-secondary a,
+.bg-dark a, .btn-dark a{
+    color: #fff;
+}
+
+/* Text Colors */
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.text-dark {
+    color: var(--dark-color);
+}
+
+.text-light {
+    color: var(--light-color);
+}
+
+/* Text Sizes */
+.lead {
+    font-size: 20px;
+}
+
+.sm {
+    font-size: 1rem;
+}
+
+.md {
+    font-size: 2rem;
+}
+
+.lg {
+    font-size: 3rem;
+}
+
+.xl {
+    font-size: 4rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Alert */
+.alert {
+    background-color: var(--light-color);
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.alert i {
+    margin-right: 10px;
+}
+
+.alert-success {
+    background-color: var(--success-color);
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.alert-error {
+    background-color: var(--error-color);
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* flex utility function */
+.flex {
+    display: flex; /* turns items into flex column (row) */
+    /* flex-direction: column; would make the nav still a flexbox but it would go beneath the h1 because we set it to be a column*/
+    
+    /* main axis (varies depending on flex-direction; for ex. if flex-direction was column, the main axis would be the vertical one and vice versa), cross axis (flexbox)*/
+    justify-content: center; /* corresponds main axis */
+    /* space-between takes the remaining space and adds it between flex items */
+    align-items: center; /* corresponds with cross axis */
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* this property is needed to put each item into a column. we have 2 parameters here because we have 2 grid items ("showcase-text" and "showcase-form"). width is being changed here */
+    /* fr stands for fr. the first parameter in the repeat function is the number of times repeated for each item. same as writing "1fr 1fr". splits the page evenly*/
+    gap: 20px; /* adds a gap between the two items */
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* this property is necessary for centering the items in both the vertical and horizontal axis (justify-content and align-items) */
+
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Margin */
+.my-1 {
+    margin: 1rem 0; /* by default, 1 rem is equal to 16px, unless specified/changed in the html tag font-size */
+}
+
+.my-2 {
+    margin: 1.5rem 0;
+}
+
+.my-3 {
+    margin: 2rem 0;
+}
+
+.my-4 {
+    margin: 3rem 0;
+}
+
+.my-5 {
+    margin: 4rem 0;
+}
+
+.m-1 {
+    margin: 1rem;
+}
+
+.m-2 {
+    margin: 1.5rem;
+}
+
+.m-3 {
+    margin: 2rem;
+}
+
+.m-4 {
+    margin: 3rem;
+}
+
+.m-5 {
+    margin: 4rem;
+}
+
+/* Padding */
+.py-1 {
+    padding: 1rem 0; /* by default, 1 rem is equal to 16px, unless specified/changed in the html tag font-size */
+}
+
+.py-2 {
+    padding: 1.5rem 0;
+}
+
+.py-3 {
+    padding: 2rem 0;
+}
+
+.py-4 {
+    padding: 3rem 0;
+}
+
+.py-5 {
+    padding: 4rem 0;
+}
+
+.p-1 {
+    padding: 1rem; /* by default, 1 rem is equal to 16px, unless specified/changed in the html tag font-size */
+}
+
+.p-2 {
+    padding: 1.5rem;
+}
+
+.p-3 {
+    padding: 2rem;
+}
+
+.p-4 {
+    padding: 3rem;
+}
+
+.p-5 {
+    padding: 4rem;
+}
