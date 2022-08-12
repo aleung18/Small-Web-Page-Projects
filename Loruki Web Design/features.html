@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Below allows us to use font-awesome classes to create icons. Got from cdnjs: https://cdnjs.com/libraries/font-awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/utilities.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.png"> <!-- Favicon -->
+        <title>Loruki | Cloud Hosting For Everyone</title>
+    </head>
+    <body>
+        <!-- Navbar -->    
+        <div class="navbar">
+            <!-- Don't want logo/links to stretch all the way over on larger screens, want to end it at a certain point -->
+            <!-- Will use flexbox to make the below div a flexbox container -->
+            <!-- This makes the h1 and the nav flexbox items which we can align however we want -->
+            <!-- We're not putting display:flex on the container though; instead, we're going to add a utility class of flex  -->
+            <div class="container flex">
+                <!-- the h1 "logo" and nav are our flex items -->
+                <h1 class="logo">Loruki.</h1>
+                <nav>
+                    <ul>
+                        <!-- Shft + Opt + Down copies line down -->
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="docs.html">Docs</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Head -->
+        <section class="features-head bg-primary py-3">
+            <div class="container grid">
+                <div>
+                    <h1 class="xl">Features</h1>
+                    <p class="lead">Check out the features of Loruki that separate us from the comptetition</p>
+                </div>
+                <img src="images/server.png" alt="">
+            </div>
+        </section>
+
+        <!-- Subhead -->
+        <section class="features-sub-head bg-light py-4">
+            <div class="container grid">
+                <div>
+                    <h1 class="md">The Loruki Platform</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex pariatur consectetur enim totam aperiam est, doloribus quasi quos veritatis nulla vitae incidunt! Aspernatur alias libero explicabo vitae a odit qui.</p>
+                </div>
+                <img src="images/server2.png" alt="">
+            </div>
+        </section>
+
+        <!-- Main -->
+        <section class="features-main my-2">
+            <div class="container grid grid-3">
+                <!-- we want this to be a grid of cards, but we are also adding flex because in the card we want to align the elements using flex -->
+                <div class="card flex">
+                    <i class="fas fa-server fa-3x"></i>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odit, fugit ea expedita deleniti culpa quaerat numquam neque alias accusamus fuga laudantium delectus odio officiis eos eaque debitis ipsum vitae!</p>
+                </div>
+                <div class="card flex">
+                    <i class="fas fa-network-wired fa-3x"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, beatae tempore. Inventore voluptate quidem aut ad, fugit nisi eveniet labore rerum consectetur officia assumenda minima corrupti, velit quod vitae itaque.</p>
+                </div>
+                <div class="card flex">
+                    <i class="fas fa-laptop-code fa-3x"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum explicabo doloribus, unde incidunt numquam!</p>
+                </div>
+                <div class="card flex">
+                    <i class="fas fa-database fa-3x"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quas dignissimos ipsam aperiam.</p>
+                </div>
+                <div class="card flex">
+                    <i class="fas fa-power-off fa-3x"></i>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque earum delectus eveniet dolores culpa.</p>
+                </div>
+                <div class="card flex">
+                    <i class="fas fa-upload fa-3x"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi consequuntur, id reprehenderit expedita ea molestias soluta.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer bg-dark py-5">
+            <div class="container grid grid-3">
+                <div>
+                    <h1>Loruki</h1>
+                    <p>Copyright &copy; 2020</p>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="docs.html">Docs</a></li>
+                    </ul>
+                </nav>
+                <div class="social">
+                    <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
